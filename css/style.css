@@ -1,3 +1,7 @@
+body{
+	width: 1152px;
+}
+
 /* header */
 
 /* header　ここまで */
@@ -27,5 +31,7 @@ footer{
 /* スマートフォン */
 
 @media screen and (max-width :767px){
-	
+	body{
+		width: 100%;
+	}
 }
