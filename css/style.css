@@ -10,24 +10,26 @@ li {
 .fixed {
     position: fixed;
     width: 100%;
-    margin-top: -50px;
   }
 
 .menulist{
     display: flex;
     justify-content: flex-end;
-
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .menucontent{
-    margin-left: 7px;
-    /* margin-right: ; */
+    margin-left: 10px;
 }
 
 /* header　ここまで */
 
 
 /* main */
-
+.nightviwe{
+	text-align: center
+	;
+}
 /* main ここまで */
 
 
