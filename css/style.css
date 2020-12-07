@@ -7,16 +7,16 @@ body{
 li {
     list-style: none;
 }
-.fixed {
+/* .fixde {
     position: fixed;
-    width: 100%;
-  }
+	width: 100%;
+  } */
 
 .menulist{
     display: flex;
     justify-content: flex-end;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .menucontent{
     margin-left: 10px;
@@ -27,8 +27,7 @@ li {
 
 /* main */
 .nightviwe{
-	text-align: center
-	;
+	text-align: center;
 }
 /* main ここまで */
 
