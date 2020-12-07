@@ -71,9 +71,21 @@ li {
 
 /* footer */
 footer{
+	position: relative;
+	justify-content: center;
+	display: flex;
+	align-items: center;
     width: 100%;
-    height: 150px;
-    
+    height: 70px;
+	background-color: black;
+	
+}
+
+.copylight{
+	position: absolute;
+	text-align: center;
+	color:white;
+	font-size: small;
 }
 /* footer ここまで */
 
