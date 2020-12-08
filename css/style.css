@@ -8,12 +8,6 @@ li {
     list-style: none;
 }
 
-/* これ入れたら変になります↓ */
-.fixed {
-	position: fixed;
-	z-index: 10;
-}
-
 
 .menulist{
     display: flex;
