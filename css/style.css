@@ -36,9 +36,13 @@ li {
 	margin-left: 100px; */
 }
 
+.p-1{
+	width:1152px;
+}
+
 .nightviwe{
-	text-align: center;
-	
+	display: flex;
+	justify-content: center;
 }
 
 .logo{
