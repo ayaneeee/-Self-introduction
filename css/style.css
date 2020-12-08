@@ -155,10 +155,33 @@ footer{
 		width: 100%;
 	}
 
+<<<<<<< HEAD
 	.flex-box{
 		display: flex;
 		flex-direction: column;
 		align-items:center;
 	}
 
+=======
+	.village{
+		width:100%;
+		text-align: center;
+	}
+	.nightviwe{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+
+
+	.menulist{
+    display: none;
+	justify-content: flex-end;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	width:100%;
+}
+
+>>>>>>> 890fb7dd0165efceac862f5ba215488ff565d02a
 }
