@@ -24,7 +24,7 @@ li {
 }
 
 .menucontent{
-    margin-left: 10px;
+    margin-left: 3%;
 }
 
 /* header　ここまで */
@@ -66,9 +66,14 @@ li {
 
 
 /* article */
+article{
+	margin-top: 7%;
+	margin-bottom: 3%;
+}
 
 .latest-article{
 	text-align: center;
+	font-size: 1.8rem
 }
 
 .bd-grid {
@@ -106,8 +111,9 @@ li {
 	position: absolute;
 	bottom: 0;
 	right: 20px;
-	padding-bottom: 1rem;
-	margin: 0;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid rgb(90, 89, 89);
+	border-radius: 1px;
 
 }
 
