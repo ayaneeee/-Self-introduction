@@ -163,14 +163,25 @@ footer{
 		justify-content: center;
 	}
 
-
-
 	.menulist{
     display: none;
 	justify-content: flex-end;
 	margin-top: 55px;
 	margin-bottom: 55px;
 	width:100%;
+}
+
+/* .mainall{
+	margin-top: 
+	/* margin-top:110px; */
+ /* } */ 
+
+.logo{
+	width: 10%;
+	position: absolute;
+	margin-bottom: 200px;
+	top: 0;
+	left: 0px;
 }
 
 }
