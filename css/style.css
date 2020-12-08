@@ -22,6 +22,8 @@ li {
 }
 
 
+
+
 /* header　ここまで */
 
 
@@ -151,6 +153,12 @@ footer{
 @media screen and (max-width :767px){
 	body{
 		width: 100%;
+	}
+
+	.flex-box{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
 	}
 
 }
