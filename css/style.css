@@ -153,4 +153,24 @@ footer{
 		width: 100%;
 	}
 
+	.village{
+		width:100%;
+		text-align: center;
+	}
+	.nightviwe{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+
+
+	.menulist{
+    display: none;
+	justify-content: flex-end;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	width:100%;
+}
+
 }
