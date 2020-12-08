@@ -22,6 +22,8 @@ li {
 }
 
 
+
+
 /* header　ここまで */
 
 
@@ -152,7 +154,6 @@ footer{
 	body{
 		width: 100%;
 	}
-
 	.village{
 		width:100%;
 		text-align: center;
@@ -169,7 +170,7 @@ footer{
 	margin-top: 55px;
 	margin-bottom: 55px;
 	width:100%;
-}
+    }
 
 /* .mainall{
 	margin-top: 
