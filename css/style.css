@@ -8,6 +8,10 @@ li {
     list-style: none;
 }
 
+ul{
+	padding-left:0 ;
+}
+
 
 .menulist{
     display: flex;
@@ -147,10 +151,14 @@ footer{
 /* ハンバーガーメニュー */
 .hamburger {
 	display: none;
+	position: absolute;
 	width: 28px;
 	align-self: center;
 	margin-right: 20px;
 	margin-top: 10px;
+	top: 10%;
+	right: 2%;
+
   }
   
   .hamburger span:after,
@@ -199,29 +207,27 @@ footer{
   #drower-bg {
 	display: none; 
 	position: fixed;
-	top: 70px;
+	z-index: 10;
+	top: 152px;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: #F5F5F5;
   }
   
-  .drower {
-	display: none; 
-	z-index: 10;
-	position: absolute;
-	top: 70px;
-	height: 100vh;
-	width: 200px;
-	background-color: rgba(8, 8, 8, .5);
-	right: -200px;
-  }
-  
+
   .drower.on {
 	right: 0;
 	transition-duration: 600ms;
   }
-  
+  .js-1, .js-2, .js-3, .js-4{
+	  text-align: center;
+	  margin-top:30px ;
+	  margin-left: 0;
+  }
+
+
+
   /* ドロワー ここまで*/
 
 
@@ -277,7 +283,5 @@ footer{
 		display: block;
 	  }
 	  /* ハンバーガーメニューここまで */
-	  .drower {
-		display: block;
-	  } 
+
 }
