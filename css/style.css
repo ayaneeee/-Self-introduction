@@ -59,6 +59,9 @@ li {
 .village{
 	font-size: 20px;
 }
+.sp_br{
+	display: none;
+}
 /* main ここまで */
 
 
@@ -152,7 +155,10 @@ footer{
 	}
 	.village{
 		width:100%;
-		text-align: center;
+		text-align: center;		
+	}
+	.sp_br{
+		display: block;
 	}
 	.nightviwe{
 		width: 100%;
@@ -178,6 +184,12 @@ footer{
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
+	}
+	.word{
+		left: 0;
+		top: 40%;
+		width: 70%;
+		/* height: 50%; */
 	}
 
 }
