@@ -150,6 +150,7 @@ footer{
 	width: 28px;
 	align-self: center;
 	margin-right: 20px;
+	margin-top: 10px;
   }
   
   .hamburger span:after,
@@ -158,6 +159,7 @@ footer{
 	position: absolute;
 	left: 0;
 	top: -9px;
+	color: #000;
   }
   
   .hamburger span:after{
@@ -174,7 +176,7 @@ footer{
   .hamburger span:before {
 	width: 100%;
 	height: 5px;
-	background-color: #fff;
+	background-color: #000;
 	transition: all 0.5s;    /*←アニメーション*/
 	backface-visibility: hidden;
 	border-radius: 2px;
@@ -205,6 +207,8 @@ footer{
   }
   
   .drower {
+	display: none; 
+	z-index: 10;
 	position: absolute;
 	top: 70px;
 	height: 100vh;
@@ -273,4 +277,7 @@ footer{
 		display: block;
 	  }
 	  /* ハンバーガーメニューここまで */
+	  .drower {
+		display: block;
+	  } 
 }
