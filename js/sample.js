@@ -7,6 +7,13 @@ $(function(){
 		$(this).removeClass('active');
 	});
 
+	let h = $('.logo').outerHeight(true);
+
+	console.log(h);
+
+	$('#drower-bg').css('top',h);
+	
+
 
 });
 
