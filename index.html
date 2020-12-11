@@ -46,17 +46,45 @@
 				<span></span>
 			 	</div>
 			</div>
-			<picture class="p-1">
-				<source srcset="img/visual_1_sp.png" media="(max-width :767px)" />
-				<img class="nightviwe" src="img/visual_1_pc.png" alt="アメリカンビレッジロゴ文字">
-			</picture>
-			<picture class="p-2">
-				<source srcset="img/visual_text_sp.png" media="(max-width :767px)" />
-				<img class="word" src="img/visual_text_pc.png" alt="">
-			</picture>	
+			<div class="viewer">
+				<ul class="viewcontent">
+					<li><picture class="p-1">
+						<source srcset="img/visual_1_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_1_pc.png" alt="アメリカンビレッジロゴ文字">
+				　	</picture></li>
+					<li><picture class="p-1">
+						<source srcset="img/visual_2_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_2_pc.png" alt="アメリカンビレッジロゴ文字">
+				　	</picture></li>
+					<li><picture class="p-1">
+						<source srcset="img/visual_3_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_3_pc.png" alt="アメリカンビレッジロゴ文字">
+				　	</picture></li>
+					<li><picture class="p-1">
+						<source srcset="img/visual_4_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_4_pc.png" alt="アメリカンビレッジロゴ文字">
+				　	</picture></li>
+				　　<li><picture class="p-1">
+						<source srcset="img/visual_5_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_5_pc.png" alt="アメリカンビレッジロゴ文字">
+				　	</picture></li>
+					<li><picture class="p-6">
+						<source srcset="img/visual_1_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_6_pc.png" alt="アメリカンビレッジロゴ文字">
+					</picture></li>
+					<li><picture class="p-1">
+						<source srcset="img/visual_7_sp.png" media="(max-width :767px)" />
+						<img class="nightviwe" src="img/visual_7_pc.png" alt="アメリカンビレッジロゴ文字">
+					</picture></li>
+				</ul>
+
+				<picture class="p-2">
+					<source srcset="img/visual_text_sp.png" media="(max-width :767px)" />
+					<img class="word" src="img/visual_text_pc.png" alt="">
+				</picture>
+			</div><!--/.viewer-->	
 		</div>
 		<p class="village">進化し続ける「街」<br class="sp_br">アメリカンビレッジマガジン</p>
-
 	</main>
 	<!-- main ここまで -->
 
@@ -131,6 +159,29 @@
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/sample.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+		var $setElm = $('.viewer'),
+		fadeSpeed = 1500,
+		switchDelay = 5000;
+	
+		$setElm.each(function(){
+			var targetObj = $(this);
+			var findUl = targetObj.find('ul');
+			var findLi = targetObj.find('li');
+			var findLiFirst = targetObj.find('li:first');
+	
+			findLi.css({display:'block',opacity:'0',zIndex:'99'});
+			findLiFirst.css({zIndex:'100'}).stop().animate({opacity:'1'},fadeSpeed);
+	
+			setInterval(function(){
+				findUl.find('li:first-child').animate({opacity:'0'},fadeSpeed).next('li').css({zIndex:'100'}).animate({opacity:'1'},fadeSpeed).end().appendTo(findUl).css({zIndex:'99'});
+			},switchDelay);
+		});
+	});
+	</script>
+
 </body>
 
 </html>
