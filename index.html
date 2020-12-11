@@ -78,11 +78,12 @@
 					</picture></li>
 				</ul>
 
-				<picture class="p-2">
-					<source srcset="img/visual_text_sp.png" media="(max-width :767px)" />
-					<img class="word" src="img/visual_text_pc.png" alt="">
-				</picture>
+				
 			</div><!--/.viewer-->	
+			<picture class="p-2">
+				<source srcset="img/visual_text_sp.png" media="(max-width :767px)" />
+				<img class="word" src="img/visual_text_pc.png" alt="">
+			</picture>
 		</div>
 		<p class="village">進化し続ける「街」<br class="sp_br">アメリカンビレッジマガジン</p>
 	</main>
@@ -160,27 +161,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/sample.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script>
-	$(function(){
-		var $setElm = $('.viewer'),
-		fadeSpeed = 1500,
-		switchDelay = 3000;
-	
-		$setElm.each(function(){
-			var targetObj = $(this);
-			var findUl = targetObj.find('ul');
-			var findLi = targetObj.find('li');
-			var findLiFirst = targetObj.find('li:first');
-	
-			findLi.css({display:'block',opacity:'0',zIndex:'99'});
-			findLiFirst.css({zIndex:'100'}).stop().animate({opacity:'1'},fadeSpeed);
-	
-			setInterval(function(){
-				findUl.find('li:first-child').animate({opacity:'0'},fadeSpeed).next('li').css({zIndex:'100'}).animate({opacity:'1'},fadeSpeed).end().appendTo(findUl).css({zIndex:'99'});
-			},switchDelay);
-		});
-	});
-	</script>
 
 </body>
 
