@@ -34,34 +34,62 @@ ul{
 
 /* header　ここまで */
 
-
-/* main */
-
-
-
-.mainviwe{
+/* スライダー */
+.viewer {
 	position: relative;
+    margin: 0 auto;
+	width: 1152px;
+	height: 650px;
+    text-align: left;
+	overflow: hidden;
+	z-index: 5;
+	
 }
-
-.p-1{
-	width:1152px;
+ 
+.viewer ul {
+	width: 1152px;
+	height: 100%;
+    text-align: left;
+    overflow: hidden;
+	position: relative;
+	z-index: 5;
+	
+}
+ 
+.viewer ul li {
+    top: 0;
+    left: 0;
+	width: 1152px;
+	z-index: 5;
+	height: 100%;
+    display: none;
+    position: absolute;
 }
 
 .nightviwe{
 	display: flex;
+	position: relative;
+	z-index: 5;
 	justify-content: center;
 	margin: 0 auto;
 }
 
+/* main */
+.mainviwe{
+	position: relative;
+}
+
 .logo{
 	position: absolute;
+	z-index: 20;
 	top: -120px;
 	left: 0px;
 }
 
 .word{
 	position: absolute;
-	bottom: -48px;
+	z-index: 50;
+	bottom: 23%;
 	right: 3px;
 }
 .village{
@@ -171,13 +199,13 @@ footer{
 .hamburger {
 	display: none;
 	position: absolute;
+	z-index: 40;
 	width: 28px;
 	align-self: center;
 	margin-right: 20px;
 	margin-top: 10px;
 	top: 10%;
 	right: 2%;
-
   }
   
   .hamburger span:after,
@@ -268,6 +296,29 @@ footer{
 		width: 100%;
 		display: flex;
 		justify-content: center;
+	}
+	.viewer {
+		margin: 0 auto;
+		width: 100%;
+		height: 300px;
+		text-align: left;
+		overflow: hidden;
+	}
+	 
+	.viewer ul {
+		width: 100%;
+		height: 300px;
+		text-align: left;
+		overflow: hidden;
+		position: relative;
+	}
+	.viewer ul li {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 300px;
+		display: none;
+		position: absolute;
 	}
 	.menulist{
     	display: none;
