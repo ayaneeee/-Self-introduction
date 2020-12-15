@@ -1,179 +1,260 @@
 body{
-	width: 1152px;
 	margin: 0 auto;
+	background-color:#7ac0cc;
+	font-family: 'Kurale', serif;
 }
+
+ul{
+	margin: 0 auto;
+	padding-left:0 ;
+}
+
 
 /* header */
 li {
     list-style: none;
 }
 
-ul{
-	padding-left:0 ;
+
+.fixed{
+    display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width:100%;
+	color: #fcf8ec;
+	font-size: 12px;
+	background-color: #7ac0cc;
+	width: 100%;
 }
 
+.header-right img{
+	height: 50px;
+	margin-left: 10px;
+
+}
+
+.header-left{
+	display: flex;
+	align-items: center;
+}
 
 .menulist{
-    display: flex;
-	justify-content: flex-end;
-	margin-top: 55px;
-	margin-bottom: 55px;
-	width:100%;
+	display: flex;
+	align-items: center;
 }
 
-.menucontent{
-    margin-left: 3%;
+.menulist li{
+	margin-right: 10px;
 }
-
-.menucontent:first-child{
-	margin-left: 0;
-}
-
-
 
 
 /* header　ここまで */
 
-/* スライダー */
-.viewer {
-	position: relative;
-    margin: 0 auto;
-	width: 1152px;
-	height: 448px;
-    text-align: left;
-	overflow: hidden;
-	z-index: 5;
-	
-}
- 
-.viewer ul {
-	width: 1152px;
-	height: 100%;
-    text-align: left;
-    overflow: hidden;
-	position: relative;
-	z-index: 5;
-	
-}
- 
-.viewer ul li {
-    top: 0;
-    left: 0;
-	width: 1152px;
-	z-index: 5;
-	height: 100%;
-    display: none;
-    position: absolute;
-}
-
-.nightviwe{
+/* list */
+.list{
 	display: flex;
-	position: relative;
-	z-index: 5;
+	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
 }
 
-/* main */
-.mainviwe{
-	position: relative;
-}
-
-.logo{
-	position: absolute;
-	z-index: 20;
-	top: -120px;
-	left: 0px;
-}
-
-.word{
-	position: absolute;
-	z-index: 50;
-	bottom: -11%;
-	right: 3px;
-}
-.village{
-	font-size: 20px;
-}
-.sp_br{
-	display: none;
-}
-/* main ここまで */
 
 
-/* article */
-.blog{
+
+/*about 見出し */
+section{
+	margin-top: 7%;
+	margin-bottom: 7%;
+	margin-left:2% ;
+	margin-right: 2%;
+}
+
+.about{
 	margin-top: 7%;
 	margin-bottom: 3%;
 }
 
 .latest-article{
+	text-align: left;
+	font-size: 1.8rem;
+	color: #fcf8ec;
+}
+
+
+.wordcontent{
+	color: #fcf8ec;
 	text-align: center;
-	font-size: 1.8rem
+	font-family: 'Crimson Text', serif;
+}
+.word1{
+	font-size: 16px;
+	text-align: left;
 }
 
-.bd-grid {
-	display: grid;
-	gap: 2rem;
+.word2{
+	font-size: 12px;
 }
 
-.flex-box{
+/* 見出しここまで */
+
+/*aboutme */
+.name{
+	position   : relative;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+.name:hover .namecontent {
+	display: inline;      
+	transition-duration: 1s;  
+  }
+
+  .namecontent {
+	position   : absolute;               
+	display: none;                                               /* 吹き出し全体の幅 */
+	left : 45%;                           
+	top : -20%;                                      
+  }
+
+  .namecontent img{
+	width: 30%;
+  }
+
+  .wish{
+	position   : relative;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+  .wish:hover .wishcontent {
+	display: inline;        
+  }
+  .wishcontent {
+	position   : absolute;               
+	display: none;                                               /* 吹き出し全体の幅 */
+	left : 45%;                           
+	top : -20%;                                      
+  }
+
+  .wishcontent img{
+	width: 30%;
+  }
+
+  .live{
+	position   : relative;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+  .live:hover .livecontent {
+	display: inline;        
+  }
+  .livecontent {
+	position   : absolute;               
+	display: none;                                               /* 吹き出し全体の幅 */
+	left : 45%;                           
+	top : -20%;                                      
+  }
+
+  .livecontent img{
+	width: 30%;
+  }
+
+  .work{
+	position   : relative;
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+  .work:hover .workcontent {
+	display: inline;        
+  }
+  .workcontent {
+	position   : absolute;               
+	display: none;                                               /* 吹き出し全体の幅 */
+	left : 45%;                           
+	top : -20%;                                      
+  }
+
+  .workcontent img{
+	width: 30%;
+  }
+/* aboutme ここまで */
+
+
+/* like */
+
+/* memory */
+.photos{
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 }
-
-.blog-content{
-	position: relative;
-	margin-bottom: 5%; 
-	width: 320px;
+.friendsphoto{
+	width: 30%;
+	
+}
+.friendsphoto span{
+	height:0px;
 }
 
-.blog-content.active{
-	box-shadow:0px 0px 5px;
-    border:1px solid #000;
+.friendsphoto img{
+	width: 50%;
+	height: 45%;
+	margin-top:0 ;
+	filter: grayscale(120%);
+	transition-duration: 0.5s;
 }
 
-.blog-time{
-	margin: 2% 0 0 0;
+.friendsphoto img:hover{
+	filter: grayscale(0);
+	transition-duration: 0.5s;
+  }
+
+.foodphoto {
+	margin-left:2% ;
+	margin-right:2% ; 
+	width: 30%;
 }
 
-.blog-title{
-	margin-top: 3%;
-	margin-bottom: 50%;
+
+.foodphoto img{
+	width: 50%;
+	height: 45%;
+	filter: grayscale(120%);
+	transition-duration: 0.5s;
 }
 
-.blog-time, .blog-title{
-	margin-left: 5%;
+.foodphoto  img:hover{
+	filter: grayscale(0);
+	transition-duration: 0.5s;
+  }
+
+.viewphoto{
+	width: 30%;
 }
 
-.blog-more{
-	position: absolute;
-	bottom: 0;
-	right: 20px;
-	padding-bottom: 0.5rem;
-	cursor: pointer;
 
+.viewphoto img{
+	width: 50%;
+	height: 45%;
+	filter: grayscale(120%);
+	transition-duration: 0.5s;
 }
 
-.blog-more:before{
-	content: '';
-	background-color: green;
-	position: absolute;
-	right: 1%;
-	transition-duration: 800ms;
-	bottom:0;
-	width: 20%;
-	height: 2px
+.viewphoto img:hover{
+	filter: grayscale(0);
+	transition-duration: 0.5s;
+  }
+
+
+/* contact */
+
+
+.contactform{
+	display: flex;
+	text-align:center;
+	justify-content: center;
 }
-
-.blog-more:hover::before{
-	transition-duration:800ms;
-	width: 100%;
-}
-
-/* article ここまで */
-
 
 /* footer */
 footer{
@@ -183,14 +264,14 @@ footer{
 	align-items: center;
     width: 100%;
     height: 70px;
-	background-color: black;
+	background-color:#7ac0cc;
 	
 }
 
 .copylight{
 	position: absolute;
 	text-align: center;
-	color:white;
+	color:#fcf8ec;
 	font-size: small;
 }
 /* footer ここまで */
@@ -214,7 +295,7 @@ footer{
 	position: absolute;
 	left: 0;
 	top: -9px;
-	color: #000;
+	color: #fff;
   }
   
   .hamburger span:after{
@@ -231,7 +312,7 @@ footer{
   .hamburger span:before {
 	width: 100%;
 	height: 5px;
-	background-color: #000;
+	background-color: #fff;
 	transition: all 0.5s;    /*←アニメーション*/
 	backface-visibility: hidden;
 	border-radius: 2px;
