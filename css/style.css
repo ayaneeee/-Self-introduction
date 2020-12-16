@@ -34,12 +34,21 @@ a{
 .header-right img{
 	height: 50px;
 	margin-left: 10px;
-
 }
 
 .header-left{
 	display: flex;
 	align-items: center;
+}
+
+.contactform li{
+	margin-right: 6px;
+}
+
+
+.iconsize{
+	font-size: 20px;
+	color:#fcf8ec;
 }
 
 .menulist{
@@ -59,23 +68,26 @@ a{
 /* list */
 .mainlist{
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	z-index: 10;
+	font-size: 35px;
+	margin-left: 5px;
 }
 
-.et_pb_module{
-	margin-right: 2%;
-	margin-left: 2%;
+.secList{
+	color: #333;
+	margin-left:20px ;
 }
 
-
+.showmain img {
+	width: 100%;
+}
 
 /*about 見出し */
 section{
 	margin-top: 7%;
 	margin-bottom: 7%;
-	margin-left:2% ;
-	margin-right: 2%;
+	margin-left: 2%;
 }
 
 .about{
@@ -87,6 +99,7 @@ section{
 	text-align: left;
 	font-size: 1.8rem;
 	color: #fcf8ec;
+	margin-left: 5px;
 }
 
 
@@ -267,14 +280,14 @@ section{
 
 /* footer */
 footer{
-	position: relative;
+	position: absolute;
 	justify-content: center;
 	display: flex;
 	align-items: center;
     width: 100%;
     height: 70px;
 	background-color:#7ac0cc;
-	
+	bottom: 0;
 }
 
 .copylight{
@@ -282,89 +295,10 @@ footer{
 	text-align: center;
 	color:#fcf8ec;
 	font-size: small;
+	bottom: 0;
 }
 /* footer ここまで */
 
-/* ハンバーガーメニュー */
-.hamburger {
-	display: none;
-	position: absolute;
-	z-index: 40;
-	width: 28px;
-	align-self: center;
-	margin-right: 20px;
-	margin-top: 10px;
-	top: 10%;
-	right: 2%;
-  }
-  
-  .hamburger span:after,
-  .hamburger span:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: -9px;
-	color: #fff;
-  }
-  
-  .hamburger span:after{
-	top: 9px;
-  }
-  
-  .hamburger span {
-	position: relative;
-	display: block;
-  }
-  
-  .hamburger span,
-  .hamburger span:after,
-  .hamburger span:before {
-	width: 100%;
-	height: 5px;
-	background-color: #fff;
-	transition: all 0.5s;    /*←アニメーション*/
-	backface-visibility: hidden;
-	border-radius: 2px;
-  }
-  
-  .hamburger.on span {
-	background-color: transparent;
-  }
-  
-  .hamburger.on span:before {
-	transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  .hamburger.on span:after {
-	transform: rotate(-45deg) translate(7px, -8px);
-  }
-  /* ハンバーガーメニューここまで */
-  
-  /* ドロワー */
-  #drower-bg {
-	display: none; 
-	position: fixed;
-	z-index: 60;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: #F5F5F5;
-  }
-  
-
-  .drower.on {
-	right: 0;
-	transition-duration: 600ms;
-  }
-  .js-1, .js-2, .js-3, .js-4{
-	  text-align: center;
-	  margin-top:30px ;
-	  margin-left: 0;
-  }
-
-
-
-  /* ドロワー ここまで*/
 
 
 
@@ -375,73 +309,70 @@ footer{
 	body{
 		width: 100%;
 	}
-	.village{
-		width:100%;
-		text-align: center;		
-	}
-	.sp_br{
+
+	.contactform{
 		display: block;
 	}
-	.nightviwe{
-		width: 100%;
-		display: flex;
-		justify-content: center;
+
+	.contactform li{
+		margin-top: 50%;
 	}
-	.viewer {
-		margin: 0 auto;
-		width: 100%;
-		height: 300px;
-		text-align: left;
-		overflow: hidden;
+
+	.fab{
+		font-size: 30px;
 	}
-	 
-	.viewer ul {
-		width: 100%;
-		height: 300px;
-		text-align: left;
-		overflow: hidden;
-		position: relative;
-		margin: 0;
-	}
-	.viewer ul li {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 300px;
-		display: none;
+
+	.mainlist{
+		display: block;
 		position: absolute;
+		text-align: center;
+		left: 25%;
+		top: 10%;
 	}
-	.menulist{
-    	display: none;
-	}
-	.mainviwe{
-		position: relative;
-	}
-	.logo{
-		margin-top:20px;
-		margin-bottom: 20px;
-		width: 100%;
-		position: relative;
-		top: 0;
-	}
-	.logo img{
-		width: 30%;
-		height: 30%;
-		display: flex;
-		justify-content: center;
-		margin: 0 auto;
-	}
-	.word{
-		left: 0;
-		top: 40%;
-		width: 70%;
-		/* height: 50%; */
+	.sun{
+		margin-top:50%;
 	}
 
-	  /* ハンバーガーメニュー */
-	  .hamburger {
+	.latest-article , .word1{
+		text-align: center;
+	}
+
+	.section{
+		margin-top: 20%;
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+
+	.photos {
 		display: block;
-	  }
-	  /* ハンバーガーメニューここまで */
+	}
 
+	.photos img{
+		text-align: center;
+	}
+
+
+	.friendsphoto{
+		width: 100%;
+		margin-right: 0;
+	}
+	.friendsphoto img{
+		height: 180px;
+	}
+
+	.foodphoto {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.foodphoto img{
+		height: 180px;
+	}
+	.viewphoto{
+		width: 100%;
+	}
+	.viewphoto img{
+		height: 180px;
+	}
 }

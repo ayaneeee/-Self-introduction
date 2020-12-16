@@ -1,4 +1,22 @@
-// 表示・非表示
+// 太陽ロゴ表示・非表示
+$(function () {
+    $('.secList').click(function () {
+		$('.sun').hide();
+    });
+});
+
+// クリック時に太陽を出す
+// $(function () {
+// 	$('.secList').click(function () {
+// 	if($('.section').length){
+// 		$('.sun').show();
+// 		};
+// 	  });	
+// 	});
+
+	
+
+// 内容表示・非表示
 $(function(){
 	$('.section').hide();
   
@@ -13,27 +31,6 @@ $(function(){
 	});
   });
 
-// ハンバーガー
-$(function() {
-	// ハンバーガーメニューが押された時
-	$('#toggle').on('click',function(){
-		console.log('aiuoe');
-		$(this).toggleClass('on');
-		$('.js-drower').toggleClass('on');
-		
-		let isActive = $(this).hasClass('on');
-		toggleDrower(isActive);
-	});
-  });
-  
-  //ハンバーガーメニューでドロップダウン
-	function toggleDrower(isActive) {
-	  if (isActive) {
-		// onになっていた時、メニューを表示
-		$('#drower-bg').fadeIn(600);
-	  } else {
-		// onを外した時、メニューを非表示
-		$('#drower-bg').fadeOut(600);
-	  }
-	}
+
+
 
