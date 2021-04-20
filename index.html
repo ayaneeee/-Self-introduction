@@ -4,114 +4,143 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>	</title>
+	<title> 自己紹介</title>
 
 	<!-- css　ファイル -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 
 	<!-- fontawesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 	<!-- フォントデザイン -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
 <body>
 	<!-- header -->
 	<header>
 		<div class="fixed">
-			<div class="header-right">
-			</div>
-			<div class="header-left">	
-				<ul class="contactform">
-					<li><a href="#"><i class="fab fa-instagram iconsize"></i></a></li>	
-					<li><a href="#"><i class="fab fa-facebook-f iconsize"></i></a></li>	
-					<li><a href="#"><i class="fab fa-twitter iconsize"></i></a></li>	
-					<li><a href="#"><i class="fab fa-google iconsize"></i></a></li>	
-				</ul>
-			</div>
+				<div class="heder-right">
+					<ul class="contactform">
+						<li><a href="https://www.instagram.com/ayanee_28"><i class="fab fa-instagram iconsize"></i></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100011424285450"><i class="fab fa-facebook-f iconsize"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter iconsize"></i></a></li>
+						<li><a href="mailto:ayane@dreamcatcher.jp"><i class="fab fa-google iconsize"></i></a></li>
+					</ul>
+				</div>
 		</div>
 	</header>
 	<!-- header ここまで -->
 
 	<!-- List -->
-	<main class="showmain">
-		<div class="mainlist">
-			<div class="et_pb_module">
-				<a href="#myself" class='secList'>ME</a>
+	<main class="show_main">
+		<div class="show_main_content">
+			<div class="main_coment">
+				<p>Hi,I'm Ayane Shimozato</p>
 			</div>
-		
-			<div class="et_pb_module">
-				<a href="#like" class='secList'>LIKE</a>
+			<div class="profile_pic">
+				<img src="./assets/img/sun.png" alt="">
 			</div>
-		
-			<div class="et_pb_module">
-				<a href="#memory" class='secList'>MEMORY</a>
-			</div>
-		</div> 
-		<img class="sun" src="img/sun5.png" alt=""> 
+				<div class="main_list">
+					<p class="et_pb_module">
+						<a href="#myself" class='menu_contents'>ME</a>
+					</p>
+					<p class="et_pb_module">
+						<a href="#like" class='menu_contents'>LIKE</a>
+					</p>
+	
+					<p class="et_pb_module">
+						<a href="#memory" class='menu_contents'>MEMORY</a>
+					</p>
+				</div>
+		</div>	
 	</main>
-		<!-- list ここまで -->
+	<!-- list ここまで -->
 
+	<!-- about -->
+	<section class="section" id="myself">
+		<h2 class="latest-article"><span>自己紹介</span></h2>
+			<div class="word1">
+				<div class="name">下里　彩音　Ayane Shimozato
+					<span class="namecontent"><img src="./assets/img/profile.JPG" alt=""></span>
+				</div>
+				<div class="wish">1995/12/28　25歳
+					<span class="wishcontent"><img src="./assets/img/gopro.jpg" alt=""></span>
+				</div>
+				<div class="live">西原町
+					<span class="livecontent"><img src="./assets/img/nisihara.jpg" alt=""></span>
+				</div>
+				<div class="work">NexSeed沖縄校
+					<span class="workcontent"><img src="./assets/img/nexseed.JPEG" alt=""></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- like -->
+	<section class="section" id="like">
+		<h2 class="latest-article"><span>すきなこと</span></h2>
+		<div class="wordcontent">
+			<div class="word2">
+				<div class="likeicon">
+					<div>
+						<a href="#outdoorvideo" class='likecontent'><i class="fas fa-hiking"></i></a>
+						<p>outdoor</p>
+					</div>
+					<div>
+						<a href="#foodvideo" class='likecontent'><i class="fas fa-utensils"></i></a>
+						<p>food</p>
+					</div>
+				</div>
+			</div>
+			<div id="outdoorvideo" class="likevideo">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/lHGynYoqZ7g?controls=0&loop=1&rel=0&autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 
-	<div class="about">
-			<!-- aboume -->
-		<section class="section" id="myself">
-			<h2 class="latest-article"><span>自己紹介</span></h2>
-			<div class="wordcontent">
-				<div class="word1">
-					<div class="name">下里　彩音　Ayane Shimozato
-						<span class="namecontent"><img src="img/profile.JPG" alt=""></span>
-					</div>
-					<div class="wish">1995/12/28　24歳
-						<span class="wishcontent"><img src="img/gopro.jpg" alt=""></span>
-					</div>
-					<div class="live">西原町
-						<span class="livecontent"><img src="img/nisihara.jpg" alt=""></span>
-					</div>
-					<div class="work">NexSeed沖縄校
-						<span class="workcontent"><img src="img/nexseed.JPEG" alt=""></span>
-					</div>
-				</div>
+			<div id="foodvideo" class="likevideo">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/JlfgUDT21oc?controls=0&loop=1&rel=0&autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>	
-		</section>
-<!-- like -->
-		<section class="section" id="like">
-			<h2 class="latest-article"><span>すきなこと</span></h2>
-			<div class="wordcontent">
-				<div class="word1">
-					<span>アウトドア</span><span><i class="fas fa-hiking"></i></span><br>
-					<span>食べ物</span> <span><i class="fas fa-utensils"></i></span>
-				</div>
-			</div>	
-		</section>
-<!-- memory -->
-		<section class="section" id="memory">
-			<h2 class="latest-article"><span>photo</span></h2>
-			<div class="photos">
-				<div class="friendsphoto">
-					<span><img src="img/goat.jpg" alt=""></span><span><img src="img/event.jpg" alt=""></span>
-					<span><img src="img/mountain.jpg" alt=""></span><span><img src="img/girlsnight.jpg" alt=""></span>
-					
-				</div>
-				<div class="foodphoto">
-					<span><img src="img/food1.jpg" alt=""></span><span class="photocontent"><img src="img/food2.jpg" alt=""></span>
-					<span><img src="img/food3.jpg" alt=""></span><span class="photocontent"><img src="img/food4.jpg" alt=""></span>
-				</div>
+		</div>				 
+	</section>
+	<!-- memory -->
+	<section class="section" id="memory">
+		<h2 class="latest-article"><span>photo</span></h2>
+		<div class="photos">
+			<div class="friendsphoto">
+				<p>out door</p>
+				<span><img src="./assets/img/goat.jpg" alt=""></span><span><img src="./assets/img/event.jpg" alt=""></span>
+				<span><img src="./assets/img/mountain.jpg" alt=""></span><span><img src="./assets/img/girlsnight.jpg" alt=""></span>
 
-				<div class="viewphoto">
-					<span><img src="img/chatan.jpg" alt=""></span><span class="photocontent"><img src="img/jeffly3.jpg" alt=""></span>
-					<span><img src="img/beach3.JPG" alt=""></span><span class="photocontent"><img src="img/night.jpg" alt=""></span>
-				</div>
-			</div>	
-		</section>
-	</div>
+			</div>
+			<div class="foodphoto">
+				<p>food</p>
+				<span><img src="./assets/img/food1.jpg" alt=""></span><span class="photocontent"><img src="./assets/img/food2.jpg"
+						alt=""></span>
+				<span><img src="./assets/img/food3.jpg" alt=""></span><span class="photocontent"><img src="./assets/img/food4.jpg"
+						alt=""></span>
+				
+			</div>
+
+			<div class="viewphoto">
+				<p>natural</p>
+				<span><img src="./assets/img/chatan.jpg" alt=""></span><span class="photocontent"><img src="./assets/img/jeffly3.jpg"
+						alt=""></span>
+				<span><img src="./assets/img/beach3.JPG" alt=""></span><span class="photocontent"><img src="./assets/img/night.jpg"
+						alt=""></span>
+				
+			</div>
+		</div>
+	</section>
 	<!-- footer -->
 	<footer>
 
 		<!-- コピーライト -->
-		<div class="copylight">
-			Copyright ©︎ Shimozato.ALL RIGHTS RESERVED.
-		</div>
+		<p class="copylight">
+			Copyright &copy; AyaneShimozato.ALL RIGHTS RESERVED.
+		</p>
 
 	</footer>
 	<!-- footer ここまで -->
@@ -121,7 +150,7 @@
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/sample.js"></script>
-	
+
 
 </body>
 

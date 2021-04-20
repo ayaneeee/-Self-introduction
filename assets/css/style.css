@@ -1,0 +1,507 @@
+body{
+	margin: 0 auto;
+	background-color:#7ac0cc;
+	font-family: 'Kurale', serif;
+}
+
+ul{
+	margin: 0 auto;
+	padding-left:0 ;
+}
+
+section{
+	margin-top: 10%;
+	margin-left: 2%;
+	height: 100vh;
+}
+
+
+/* header */
+li {
+    list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.fixed{
+  display: flex;
+	justify-content: flex-end;
+	width:100%;
+	color: #fcf8ec;
+	font-size: 12px;
+	background-color: #7ac0cc;
+	width: 100%;
+	margin-top: 1%;
+}
+
+.heder-right{
+	position: fixed;
+}
+
+.contactform{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+}
+
+.contactform li{
+	margin-right: 6px;
+}
+
+.iconsize{
+	font-size: 20px;
+	color:#fcf8ec;
+}
+
+.main_list{
+	display: flex;
+	align-items: center;
+}
+
+.main_list li{
+	margin-right: 10px;
+}
+
+/* header　ここまで */
+
+
+/* list */
+.show_main_content{
+	position: relative;
+}
+
+
+.main_coment p{
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+	text-align: center;
+	margin: 8% 0;
+}
+
+.profile_pic{
+	display: flex;
+	justify-content: center;
+}
+.profile_pic  img{
+	height: 50vh;
+}
+
+.main_list{
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+	font-size: 18px;
+	position: absolute;
+	top: 93%;
+	left:42%;
+}
+
+.menu_contents{
+	color: #333;
+	margin-left:20px ;
+}
+
+
+/*about 見出し */
+
+.latest-article{
+	text-align: left;
+	font-size: 1.8rem;
+	color: #fcf8ec;
+	margin-left: 5px;
+}
+
+
+.wordcontent{
+	color: #fcf8ec;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+}
+.word1{
+	font-size: 16px;
+	text-align: left;
+}
+
+.word2{
+	font-size: 12px;
+}
+
+/* 見出しここまで */
+
+/*aboutme */
+.wordcontent{
+	border: #333;
+}
+
+.word1{
+	position   : relative;
+}
+
+.name{
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+.name:hover .namecontent {
+	display: inline;      
+	transition-duration: 1s;  
+  }
+
+  .namecontent {
+	display: none;                                                /* 吹き出し全体の幅 */                                    
+  }
+
+  .namecontent img{
+	width: 350px;
+	height: 250px;
+	position: absolute; 
+	left : 36%;                            
+	top : 　0; 
+  }
+
+  .wish{
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+  .wish:hover .wishcontent {
+	display: inline;        
+  }
+  .wishcontent {              
+	display: none;                                               /* 吹き出し全体の幅 */                                     
+  }
+
+  .wishcontent img{
+	width: 350px;
+	height: 250px;
+	position: absolute; 
+	left : 36%;                            
+	top :0; 
+  }
+
+  .live{
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+  .live:hover .livecontent {
+	display: inline;        
+  }
+  .livecontent {          
+	display: none;                                               /* 吹き出し全体の幅 */                             
+  }
+
+  .livecontent img{
+	position   : absolute;   
+	width: 350px;
+	height: 250px;
+	left : 36%;                            
+	top : 0;   
+	transition-property: display;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  }
+
+  .work{
+	margin-top: 25px;
+	margin-bottom: 25px;
+  }
+ 
+  .work:hover .workcontent {
+	display: inline;        
+  }
+  .workcontent {          
+	display: none;                                               /* 吹き出し全体の幅 */                                   
+  }
+
+  .workcontent img{
+	width: 350px;
+	height: 250px;
+	position: absolute; 
+	left : 36%;                            
+	top : 0; 
+  }
+
+/* aboutme ここまで */
+
+
+/* like */
+#myself{
+	height: 60vh;
+}
+.likeicon{
+	display: flex;
+	justify-content: space-between;
+	width: 10%;
+	margin-left: 1%;
+}
+
+.fa-hiking,.fa-utensils{
+	font-size: 40px;
+	color: #fcf8ec;
+}
+
+.ouv{
+	width: 50%;
+	margin-top: -10%;
+}
+
+.fv{
+  width: 50%;
+  margin-top: -10%;
+}
+
+
+
+/* memory */
+.photos{
+	display: flex;
+	justify-content: center;
+	color: #fcf8ec;
+}
+.friendsphoto{
+	width: 30%;
+	position: relative;
+}
+.friendsphoto p{
+text-align: center;
+}
+.friendsphoto span{
+	height:0px;
+}
+
+.friendsphoto img{
+	width: 50%;
+	height: 35%;
+	margin-top:0 ;
+	filter: grayscale(120%);
+	transition-duration: 0.5s;
+}
+
+.friendsphoto img:hover{
+	filter: grayscale(0);
+	transition-duration: 0.5s;
+  }
+
+.foodphoto {
+	margin-left:2% ;
+	margin-right:2% ; 
+	width: 30%;
+}
+
+.foodphoto p{
+	text-align: center;
+	}
+
+.foodphoto img{
+	width: 50%;
+	height: 35%;
+	filter: grayscale(120%);
+	transition-duration: 0.5s;
+}
+
+.foodphoto  img:hover{
+	filter: grayscale(0);
+	transition-duration: 0.5s;
+  }
+
+.viewphoto{
+	width: 30%;
+}
+
+.viewphoto p{
+	text-align: center;
+	}
+
+.viewphoto img{
+	width: 50%;
+	height: 35%;
+	filter: grayscale(120%);
+	transition-duration: 0.5s;
+}
+
+.viewphoto img:hover{
+	filter: grayscale(0);
+	transition-duration: 0.5s;
+  }
+
+
+/* footer */
+footer{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+    width: 100%;
+    height: 3%;
+	background-color:#7ac0cc;
+	bottom: 0;
+}
+
+.copylight{
+	text-align: center;
+	color:#fcf8ec;
+	font-size: small;
+	bottom: 0;
+}
+/* footer ここまで */
+
+
+
+
+/* レスポンシブルデザイン */
+/* スマートフォン */
+
+@media screen and (max-width :767px){
+	body{
+		width: 100%;
+	}
+	.fixed{
+		position: relative;
+	}
+	.heder-right{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	.contactform{
+		display: block;
+	}
+
+	.contactform li{
+		margin-top: 50%;
+	}
+
+	.fab{
+		font-size: 30px;
+	}
+
+
+	
+/* list */
+	.main_coment p{
+		font-family: 'Caveat', cursive;
+		font-size: 30px;
+		margin-top: 5%;
+		left: 20%;
+	}
+
+	.main_list{
+		display: block;
+		text-align: center;
+		margin: 10% 0;
+		font-size: 35px;
+		position: absolute;
+		left: 28%;
+	}
+	.profile_pic{
+		display: none;
+	}
+
+	.latest-article , .word1{
+		text-align: center;
+	}
+
+	.section{
+		margin-top: 20%;
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+
+	.photos {
+		display: block;
+	}
+
+/* about me */
+#myself{
+	margin-top: 50%;
+
+}
+
+.namecontent img {
+	top: 0;
+	left: 0;
+	position: static;
+}
+
+.wishcontent img {
+	top: 0;
+	left: 0;
+	position: static;
+}
+
+.livecontent img {
+	top: 0;
+	left: 0;
+	position: static;
+}
+
+.workcontent img {
+	top: 0;
+	left: 0;
+	position: static;
+}
+
+/* like */
+.word2{
+	display: flex;
+	justify-content: center;
+}
+
+.likeicon {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	margin: 0;
+}
+
+.ouv ,.fv{
+	width: 100%;
+	margin-top: 5%;
+}
+
+.ikevideo{
+	width: 50%
+}
+
+/* メモリー */
+	.photos img{
+		text-align: center;
+	}
+
+
+	.friendsphoto{
+		position: relative;
+		width: 100%;
+		margin-right: 0;
+	}
+	.friendsphoto img{
+		height: 180px;
+	}
+
+	.word3 span{
+		left: 50%;
+	}
+
+	.foodphoto {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.foodphoto img{
+		height: 180px;
+	}
+	.viewphoto{
+		width: 100%;
+		position: relative;
+	}
+	.viewphoto img{
+		height: 180px;
+	}
+
+	
+}
