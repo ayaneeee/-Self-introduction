@@ -381,7 +381,10 @@ footer{
 
 
 	
-/* list */
+	/* list */
+  .show_main{
+		height: 30vh;
+	}
 	.main_coment p{
 		font-family: 'Caveat', cursive;
 		font-size: 30px;
@@ -390,8 +393,8 @@ footer{
 	}
 
 	.main_list{
-		display: block;
-		text-align: center;
+		display:flex;
+		flex-direction: column;
 		margin: 10% 0;
 		font-size: 35px;
 		position: absolute;
@@ -415,93 +418,94 @@ footer{
 		display: block;
 	}
 
-/* about me */
-#myself{
-	margin-top: 50%;
+	/* about me */
+	/* #myself{
 
-}
+	} */
 
-.namecontent img {
-	top: 0;
-	left: 0;
-	position: static;
-}
-
-.wishcontent img {
-	top: 0;
-	left: 0;
-	position: static;
-}
-
-.livecontent img {
-	top: 0;
-	left: 0;
-	position: static;
-}
-
-.workcontent img {
-	top: 0;
-	left: 0;
-	position: static;
-}
-
-/* like */
-.word2{
-	display: flex;
-	justify-content: center;
-}
-
-.likeicon {
-	display: flex;
-	justify-content: space-between;
-	width: 50%;
-	margin: 0;
-}
-
-.ouv ,.fv{
-	width: 100%;
-	margin-top: 5%;
-}
-
-.ikevideo{
-	width: 50%
-}
-
-/* メモリー */
-	.photos img{
-		text-align: center;
+	.namecontent img {
+		top: 0;
+		left: 0;
+		position: static;
 	}
 
+	.wishcontent img {
+		top: 0;
+		left: 0;
+		position: static;
+	}
 
-	.friendsphoto{
-		position: relative;
+	.livecontent img {
+		top: 0;
+		left: 0;
+		position: static;
+	}
+
+	.workcontent img {
+		top: 0;
+		left: 0;
+		position: static;
+	}
+
+	/* like */
+	.word2{
+		display: flex;
+		justify-content: center;
+	}
+
+	.likeicon {
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+		margin: 0;
+	}
+
+	.ouv ,.fv{
 		width: 100%;
-		margin-right: 0;
-	}
-	.friendsphoto img{
-		height: 180px;
+		margin-top: 5%;
 	}
 
-	.word3 span{
-		left: 50%;
+	#outdoorvideo  > iframe,#foodvideo > iframe{
+		max-width: 100%;
 	}
 
-	.foodphoto {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
 
-	.foodphoto img{
-		height: 180px;
-	}
-	.viewphoto{
-		width: 100%;
-		position: relative;
-	}
-	.viewphoto img{
-		height: 180px;
-	}
+
+	/* メモリー */
+		.photos img{
+			text-align: center;
+		}
+
+
+		.friendsphoto{
+			position: relative;
+			width: 100%;
+			margin-right: 0;
+		}
+		.friendsphoto img{
+			height: 180px;
+		}
+
+		.word3 span{
+			left: 50%;
+		}
+
+		.foodphoto {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.foodphoto img{
+			height: 180px;
+		}
+		.viewphoto{
+			width: 100%;
+			position: relative;
+		}
+		.viewphoto img{
+			height: 180px;
+		}
 
 	
 }
