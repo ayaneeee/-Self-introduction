@@ -10,7 +10,7 @@ ul{
 }
 
 section{
-	margin-top: 10%;
+	padding-top: 10%;
 	margin-left: 2%;
 	height: 100vh;
 }
@@ -70,23 +70,30 @@ a{
 
 /* list */
 .show_main_content{
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 50vh;
 }
-
 
 .main_coment p{
 	font-family: 'Caveat', cursive;
 	font-size: 40px;
 	text-align: center;
-	margin: 8% 0;
+	margin-top: 8%;
 }
 
 .profile_pic{
 	display: flex;
 	justify-content: center;
-}
-.profile_pic  img{
+	background-image: url(../img/sun.png);
 	height: 50vh;
+	background-size:cover;
+	background-size:60%;
+	background-repeat:  no-repeat; 
+	background-position:center center;  
+	margin: 3%;
 }
 
 .main_list{
@@ -94,19 +101,21 @@ a{
 	justify-content: center;
 	z-index: 10;
 	font-size: 18px;
-	position: absolute;
-	top: 93%;
-	left:42%;
+}
+
+.main_list a{
+	color: #333;
 }
 
 .menu_contents{
-	color: #333;
 	margin-left:20px ;
 }
 
 
-/*about 見出し */
-
+/*about  */
+#myself{
+	height: 60vh;
+}
 .latest-article{
 	text-align: left;
 	font-size: 1.8rem;
@@ -115,30 +124,29 @@ a{
 }
 
 
+
+
+
+/*about */
+.wordcontent{
+	border: #333;
+}
 .wordcontent{
 	color: #fcf8ec;
 	text-align: center;
 	font-family: 'Crimson Text', serif;
-}
-.word1{
-	font-size: 16px;
-	text-align: left;
 }
 
 .word2{
 	font-size: 12px;
 }
 
-/* 見出しここまで */
-
-/*aboutme */
-.wordcontent{
-	border: #333;
-}
-
 .word1{
 	position   : relative;
+	font-size: 16px;
+	text-align: left;
 }
+
 
 .name{
 	margin-top: 25px;
@@ -226,17 +234,16 @@ a{
 	top : 0; 
   }
 
-/* aboutme ここまで */
+/* about ここまで */
 
 
 /* like */
-#myself{
-	height: 60vh;
-}
+
 .likeicon{
 	display: flex;
 	justify-content: space-between;
 	width: 10%;
+	margin-top: 3%;
 	margin-left: 1%;
 }
 
@@ -255,7 +262,11 @@ a{
   margin-top: -10%;
 }
 
-
+.videos{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5%;
+}
 
 /* memory */
 .photos{
@@ -335,8 +346,8 @@ footer{
 	justify-content: center;
 	display: flex;
 	align-items: center;
-    width: 100%;
-    height: 3%;
+  width: 100%;
+  height: 3%;
 	background-color:#7ac0cc;
 	bottom: 0;
 }
@@ -368,7 +379,7 @@ footer{
 		top: 10px;
 	}
 	.contactform{
-		display: block;
+		flex-direction: column;
 	}
 
 	.contactform li{
@@ -383,13 +394,16 @@ footer{
 	
 	/* list */
   .show_main{
+		height: 40vh;
+	}
+
+	.show_main_content {
 		height: 30vh;
+
 	}
 	.main_coment p{
 		font-family: 'Caveat', cursive;
 		font-size: 30px;
-		margin-top: 5%;
-		left: 20%;
 	}
 
 	.main_list{
@@ -397,9 +411,13 @@ footer{
 		flex-direction: column;
 		margin: 10% 0;
 		font-size: 35px;
-		position: absolute;
-		left: 28%;
 	}
+
+	.menu_contents {
+		margin: 0;
+	}
+
+
 	.profile_pic{
 		display: none;
 	}
@@ -409,7 +427,7 @@ footer{
 	}
 
 	.section{
-		margin-top: 20%;
+		margin-top: 15%;
 		margin-right: 2%;
 		margin-left: 2%;
 	}
@@ -459,7 +477,9 @@ footer{
 		width: 50%;
 		margin: 0;
 	}
-
+	.videos {
+			flex-direction: column;
+	}
 	.ouv ,.fv{
 		width: 100%;
 		margin-top: 5%;
